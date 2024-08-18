@@ -1,0 +1,92 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(25deg, #928288, #403a3b 50%);
+}
+
+.container{
+    background-color: #9f3636; 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: neonGlow 1s infinite alternate;
+    color: white;
+    border: 10px solid #6c0416;
+}
+
+@keyframes neonGlow {
+    from{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+    to{
+        box-shadow: 0 0 20px rgba(154, 150, 150, 0.1),
+        0 0 30px rgba(175, 173, 173, 0.1),
+        0 0 40px rgba(243, 243, 243, 0.1);
+    }
+
+}
+
+h1{
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    width: 430px;
+    height: 250px;
+    margin: 10px auto;
+    display: block;
+    font-size: 24px;
+    padding: 20px;
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    resize: none;
+    animation: slideIn 1s alternate infinite;
+}
+
+@keyframes slideIn {
+    from{
+        opacity: 1;
+        transform: translateY(-8px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button{
+    padding: 15px 30px;
+    background-color: rgb(41, 41, 43);
+    width: 470px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(89, 87, 87); 
+}
+
+#result{
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+    animation: neonGlow 1s infinite alternate;
+}
